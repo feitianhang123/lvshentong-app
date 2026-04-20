@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绿色食品申报通</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #f8fff8 0%, #e8f5e8 100%);
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+            color: #333;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: white;
+            border-radius: 0;
+            box-shadow: none;
+            overflow: hidden;
+            position: relative;
+            padding-top: 120px;
+            padding-bottom: 60px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        
+        .main-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .sub-title {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .modules {
+            padding: 15px;
+            height: calc(100vh - 180px);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+        
+        .module-card {
+            background: #f8fff8;
+            border: 2px solid #e8f5e8;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-height: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .module-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.2);
+            border-color: #4CAF50;
+        }
+        
+        .module-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 5px;
+        }
+        
+        .module-desc {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .module-badge {
+            background: #ff9800;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            margin-left: 8px;
+        }
+        
+        .footer {
+            background: #f5f5f5;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #eee;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 1000;
+        }
+        
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .header { padding: 30px 15px; }
+            .main-title { font-size: 24px; }
+            .sub-title { font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="main-title">绿色食品申报通</div>
+            <div class="sub-title">为企业提供一站式绿色食品申报前期服务</div>
+        </div>
+        
+        <div class="modules">
+            <div class="module-card" onclick="location.href='module1_fixed_final_v95_new.html'">
+                <div class="module-title">
+                    产品目录
+                </div>
+                <div class="module-desc">查看绿色食品适用标准目录</div>
+            </div>
+            
+            <div class="module-card" onclick="location.href='module2_current_standards.html'">
+                <div class="module-title">现行标准</div>
+                <div class="module-desc">产品类及准则类标准查询</div>
+            </div>
+            
+            <div class="module-card" onclick="location.href='module3_final.html'">
+                <div class="module-title">材料清单</div>
+                <div class="module-desc">6类申报材料清单</div>
+            </div>
+            
+            <div class="module-card" onclick="location.href='module4_coming_soon.html'">
+                <div class="module-title">
+                    预审核
+                    <span class="module-badge">待开发</span>
+                </div>
+                <div class="module-desc">待开发</div>
+            <div class="module-card" onclick="location.href='module5_legal_statement.html'">
+                <div class="module-title">法律声明</div>
+                <div class="module-desc">查看软件法律声明与免责声明</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div>本软件内容均来源于中国绿色食品发展中心官网</div>
+            <div>如果存在问题请联络作者：QQ:10780329</div>
+        </div>
+    </div>
+</body>
+</html>
